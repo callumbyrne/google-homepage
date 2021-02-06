@@ -92,14 +92,17 @@
         background-color: #4285f4;
     }
     .main {
+        display: flex;
         width: auto;
         min-width: 400px;
         margin: 0 auto;
         height: 100px;
+        justify-content: center;
+        padding-top: 150px;
     }
     .logo {
         display: flex;
-        height: 72px;
+        height: 92px;
         justify-content: center;
         padding-top: 10px;
     }
@@ -110,7 +113,7 @@
         width: auto;
         max-width: 584px;
         margin: 0 auto;
-        padding-top: 6px;
+        padding-top: 30px;
     }
     .searchbar {
         display: flex;
@@ -136,6 +139,93 @@
         margin: auto;
         max-height: 26px;
         padding-left: 15px;
+    }
+    .search-buttons {
+        height: 70px;
+        padding-top: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .googleSearch {
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 34px;
+        height: 34px;
+        min-width: 54px;
+        text-align: center;
+    }
+    .imFeelingLucky {
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 34px;
+        height: 34px;
+        min-width: 54px;
+    }
+    .footer {
+        height: 82px;
+        width: 100%;
+        min-width: 400px;
+        margin: 0 auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #f2f2f2;
+        border-top: 1px solid #dadce0;
+        position: absolute;
+        display: flex;
+        font-size: 11pt;
+        flex-direction: column;
+    }
+    .top {
+        height: 41px;
+        width: 100%;
+    }
+    .fbar {
+        height: 41px;
+        margin-left: -27px;
+        line-height: 40px;
+        border-bottom: 1px solid #dadce0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .australia {
+        margin-left: 30px;
+        text-align: left;
+        color: rgba(0,0,0,.54);
+        padding-left: 27px;
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        float: left;
+        height: 41px;
+    }
+    .bleft {
+        display: flex;
+        align-items: center;
+    }
+    .bleft p {
+        padding-left: 27px;
+        color: rgba(0,0,0,.54);
+    }
+    .bright {
+        display: flex;
+    }
+    .bright p {
+        padding-left: 27px;
+        color: rgba(0,0,0,.54);
     }
 </style>
 
@@ -171,13 +261,34 @@
         </div>
         <div class="searchform">
             <div class="searchbar">
-                <svg class="svg">
+                 <svg class="svg">
                     <path class="searchlogo" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
                 </svg>
             </div>
-            <div class="search-buttons"></div>
+            <div class="search-buttons">
+                <div class="googleSearch">Google Search</div>
+                <div class="imFeelingLucky">I'm Feeling Lucky</div>
+            </div>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="top">
+                <div class="fbar">
+                    <p class="australia">Australia</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="bleft">
+                    <p>Advertising</p>
+                    <p>Business</p>
+                    <p>How Search Works</p>
+                </div>
+                <div class="bright">
+                    <p>Privacy</p>
+                    <p>Terms</p>
+                    <p>Settings</p>
+                </div>
+            </div>
+        </div>
    </div>
 </body>
 
